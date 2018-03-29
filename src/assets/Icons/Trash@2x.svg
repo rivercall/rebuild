@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="25px" viewBox="0 0 22 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Trash</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="地址管理" transform="translate(-684.000000, -427.000000)" fill="#FFFFFF">
+            <path d="M706,432 L701,432 L701,427 L689,427 L689,432 L684,432 L684,435 L685,435 L685,452 L705,452 L705,435 L706,435 L706,432 L706,432 Z M692,430 L698,430 L698,432 L692,432 L692,430 Z" id="Icons/Trash"></path>
+        </g>
+    </g>
+</svg>

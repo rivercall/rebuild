@@ -1,0 +1,50 @@
+
+.start-use{
+  background-color: #B3C4CA;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+}
+.login-form{
+  padding-top: 10rem;
+  font-size: 14px;
+  margin-bottom: 8rem;
+  /* text-align: center */
+}
+.login-form label{
+  text-align: center;
+  padding: 0;
+}
+.login-form input{
+  border: none;
+  outline: none;
+  width: 7rem;
+  text-indent: 5px;
+}
+.login-form .inputdiv{
+  border-bottom: 1px solid #eee;
+  height: 1.5rem;
+  padding: 0;
+}
+.login-form .inputbox{
+  padding-bottom: 1rem;
+
+}
+.login-form .checknum{
+  display: inline-block;
+  border: 1px solid #aaa;
+  float: right;
+}
+div.agreement{
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color:#aaa;
+  position: fixed;
+  left: 0;
+  bottom: 6rem;
+  margin: 0 auto;
+}
+div.agreement p{
+  margin: 0;
+}

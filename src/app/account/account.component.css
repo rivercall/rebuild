@@ -1,0 +1,44 @@
+/* 个人信息 */
+.top-info{
+  height: 10rem;
+  background-color: #ffc;
+  width:100%;
+  padding:1rem 0;
+  margin-bottom: 1rem;
+}
+.top-info .photo{
+  height: 4rem;
+  width:4rem;
+  border-radius: 2rem;
+  margin: 2rem auto;
+  background-color: #aaa; 
+}
+/* 余额剩余显示 */
+div.payleft{
+  height: 4rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+/* 功能区域 */
+div.func{
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+div.func>div{
+  height: 2.5rem;
+  border-bottom: 1px solid #eee;
+}
+/* 退出部分 */
+div.logout{
+  margin-bottom: 3.5rem;
+  background-color: #fff;
+  height: 3rem;
+}
+/* 页脚 */
+.footer {
+  background-color: #fff;
+}
+.footer>a{
+  height:100%;
+  padding-top: 8px;
+}

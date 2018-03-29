@@ -1,0 +1,9 @@
+.app-body{
+  background-color: #dde4ea;
+}
+app-account,app-login{
+  padding:0;
+}
+app-login{
+  background-color: #fff;
+}

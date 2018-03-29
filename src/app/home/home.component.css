@@ -1,0 +1,57 @@
+/* banner部分 */
+.banner a{
+  width: 100%;
+}
+.banner a img{
+  width: 100%;
+}
+/* 洗涤状态部分 */
+.status{
+  color:red;
+  height:100px;
+  background-color: #fff;
+  margin:0 0.5rem 0.5rem 0.5rem;
+  border-radius:5px;
+  text-align: center;
+}
+/* 洗护范围 */
+.wash-range{
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+.wash-range img{
+  width: 100%;
+}
+.wash-range p{
+  margin: 0;
+}
+.wash-range-imgbox{
+  padding-bottom: 15px;
+}
+
+/* 信息说明 */
+.wash-info{
+  padding-bottom: 49px; 
+}
+.wash-info-box{
+  margin-bottom: 15px;
+}
+.wash-info-innerbox{
+  height: 75px;
+  background-color: #fff;
+  
+}
+.wash-info img{
+  width: 100%;
+}
+
+
+/* 页脚 */
+.footer {
+  background-color: #fff;
+}
+.footer>a{
+  height:100%;
+  /* padding:0px; */
+  padding-top: 8px;
+}
