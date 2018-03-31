@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { AccountComponent } from './account/account.component';
+import { MultiplePipe } from './pipe/multiple.pipe';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AccountComponent } from './account/account.component';
     LoginComponent,
     HomeComponent,
     HeaderComponent,
-    AccountComponent
+    AccountComponent,
+    MultiplePipe
   ],
   imports: [
     BrowserModule,

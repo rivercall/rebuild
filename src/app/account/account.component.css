@@ -42,3 +42,10 @@ div.logout{
   height:100%;
   padding-top: 8px;
 }
+
+.footer>a.footer-account{
+  padding-top: 6px;
+  font-size: 12px;
+  color: gray;
+  font-weight: 700
+}

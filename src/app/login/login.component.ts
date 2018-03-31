@@ -10,6 +10,9 @@ export class LoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
-
+  nowTest(){
+    alert("first event!")
+  }
 }

@@ -6,7 +6,8 @@ import { AccountComponent } from './account/account.component';
 
 const routes: Routes = [
   // {path:"",children:[]},
-  {path:"", component: HomeComponent},
+  {path:"", redirectTo:'/home', pathMatch:"full"},
+  {path:"home", component: HomeComponent},
   {path:"login", component: LoginComponent},
   {path:"account", component: AccountComponent}
 ];
