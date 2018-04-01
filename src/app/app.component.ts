@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +16,12 @@ export class AppComponent implements OnInit{
   
 
   ngOnInit(){
-    
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {     // 当导航成功结束时执行
+        if(event.url=="/home"||event.url=="/account"){
+          this.isHeaderShow =false;
+        }
+      }
+    });
   }
 }
