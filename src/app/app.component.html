@@ -1,5 +1,5 @@
 <app-header *ngIf="isHeaderShow"></app-header>
-<div class="container app-body">
+<div class="container" [class.app-body]="isBackground">
     <div class="row">
         <div class="col-12 app-box">
             <router-outlet></router-outlet>

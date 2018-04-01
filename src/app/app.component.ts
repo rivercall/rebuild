@@ -13,12 +13,17 @@ export class AppComponent implements OnInit{
 
   // header组件默认显示
   isHeaderShow:boolean=true;
-  
+  // 背景颜色显示
+  isBackground:boolean=true;
+
   ngOnInit(){
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {     // 当导航成功结束时执行
         if(event.url=="/home"||event.url=="/account"){
           this.isHeaderShow =false;
+        }
+        if(event.url=="/login"){
+          this.isBackground = false;
         }
       }
     });
