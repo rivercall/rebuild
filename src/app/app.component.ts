@@ -14,7 +14,6 @@ export class AppComponent implements OnInit{
   // header组件默认显示
   isHeaderShow:boolean=true;
   
-
   ngOnInit(){
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {     // 当导航成功结束时执行

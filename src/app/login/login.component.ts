@@ -7,12 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  private getVertification: string = "获取验证码";
+  private second:number = 60;
+  private timer;
+
   constructor() { }
 
   ngOnInit() {
     
   }
   nowTest(){
-    alert("first event!")
+    this.timer = setInterval(() => {
+      if(this.second<=0){
+        this.getVertification ="获取验证码";
+        this.second = 60;
+        clearInterval(this.timer);
+      }else{
+        this.getVertification = this.second+"秒";
+        this.second --; 
+      }
+    }, 1000);
   }
 }
