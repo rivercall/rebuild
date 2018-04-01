@@ -4,7 +4,7 @@
       <label class="col-3 float-left">手机号</label>
       <div class="col-9 float-left inputdiv">
         <input type="text " placeholder="请输入手机号">
-        <span class="checknum" (click)="nowTest()">{{getVertification}}</span>
+        <span class="checknum" (click)="getVertif()">{{getVertification}}</span>
       </div>
   </div>
   <div class="col-12 clearfix inputbox">
@@ -18,7 +18,7 @@
   <p>继续使用代表您已阅读并同意赛维相关</p>
   <p>《用户协议条款》</p>
 </div>
-<div class="start-use fixed-bottom">开始使用</div>
+<div class="start-use fixed-bottom" (click)="login()">开始使用</div>
 
   
   

@@ -1,7 +1,11 @@
+
+ul,li{
+  list-style: none;
+}
 /* 个人信息 */
 .top-info{
-  height: 10rem;
-  background-color: #ffc;
+  height: 13.3rem;
+  background-color: #fff;
   width:100%;
   padding:1rem 0;
   margin-bottom: 1rem;
@@ -10,14 +14,44 @@
   height: 4rem;
   width:4rem;
   border-radius: 2rem;
-  margin: 2rem auto;
+  margin: 3.5rem auto 1rem;
   background-color: #aaa; 
+}
+.top-info .name{
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #1D1D26;
+  letter-spacing: 0.72px;
+  line-height: 18px;
+  margin: 0 0 10px 0;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.top-info .phone-number{
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #1D1D26;
+  letter-spacing: 0.72px;
+  line-height: 14px;
+  margin: 0 0 10px 0;
+  text-align: center;
 }
 /* 余额剩余显示 */
 div.payleft{
-  height: 4rem;
+  height: 5rem;
   margin-bottom: 1rem;
   background-color: #fff;
+}
+.payleft p.title{
+  font-family: PingFangSC-Medium;
+  font-size: 12px;
+  color: #878D94;
+  letter-spacing: 2px;
+  line-height: 12px;
+  text-align: center;
+}
+.payleft-box{
+  padding-top: 15px;
 }
 /* 功能区域 */
 div.func{
@@ -27,12 +61,35 @@ div.func{
 div.func>div{
   height: 2.5rem;
   border-bottom: 1px solid #eee;
+  padding: 0 15px 0 3rem;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #111D2D;
+  letter-spacing: 3px;
+  line-height: 2.5rem;
+}
+div.func>div a{
+  width: 100px;
+  text-align: center;
 }
 /* 退出部分 */
 div.logout{
   margin-bottom: 3.5rem;
   background-color: #fff;
   height: 3rem;
+}
+.logout div{
+  height: 3rem;
+  padding: 0 15px 0 3rem;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #111D2D;
+  letter-spacing: 3px;
+  line-height: 3rem;
+}
+.logout a{
+  width: 100px;
+  text-align: center;
 }
 /* 页脚 */
 .footer {
@@ -46,6 +103,8 @@ div.logout{
 .footer>a.footer-account{
   padding-top: 6px;
   font-size: 12px;
-  color: gray;
-  font-weight: 700
+  /* font-weight: 700; */
+  font-family: PingFangSC-Medium;
+  color: #111D2D;
+  letter-spacing: 0.84px;
 }

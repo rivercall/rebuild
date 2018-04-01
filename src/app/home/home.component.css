@@ -8,7 +8,7 @@
 /* 洗涤状态部分 */
 .status{
   color:red;
-  height:100px;
+  height:120px;
   background-color: #fff;
   margin:0 0.5rem 0.5rem 0.5rem;
   border-radius:5px;
@@ -24,9 +24,16 @@
 }
 .wash-range p{
   margin: 0;
+  height: 38px;
+  line-height: 20px;
+  font-size: 12px;
+  font-family: PingFangSC-Medium;
+  color: rgba(17,29,44,0.57);
+  letter-spacing: 1.03px;
 }
 .wash-range-imgbox{
   padding-bottom: 15px;
+  height: 5rem;
 }
 
 /* 信息说明 */
@@ -59,6 +66,8 @@
 .footer>a.footer-home{
   padding-top: 6px;
   font-size: 12px;
-  color: gray;
-  font-weight: 700
+  /* font-weight: 700; */
+  font-family: PingFangSC-Medium;
+  color: #111D2D;
+  letter-spacing: 0.84px;
 }

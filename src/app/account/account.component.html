@@ -1,22 +1,63 @@
 <!-- 顶部个人信息 -->
 <div class="top-info clearfix">
   <div class="photo"></div>
-  <div class="phone"></div>
+  <div class="phone">
+    <p class="name">我叫郭德纲</p>
+    <p class="phone-number">139***123</p>
+  </div>
 </div>
 
 <!-- 余额显示 -->
-<div class="payleft"></div>
+<div class="payleft">
+  <div class="payleft-box clearfix">
+    <div class="float-left col-4">
+      <p class="title">优惠券</p>
+      <div></div>
+    </div>
+    <div class="float-left col-4">
+      <p class="title">余额</p>
+      <div></div>
+    </div>
+    <div class="float-left col-4">
+      <p class="title">充值有礼</p>
+      <div></div>
+    </div>
+  </div>
+</div>
 <!-- 功能区域 -->
 <div class="func">
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div>
+    <span>地址管理</span>
+    <a class="float-right">></a>
+  </div>
+  <div>
+    <span>地址管理</span>
+    <a class="float-right">></a>
+  </div>
+  <div>
+    <span>地址管理</span>
+    <a class="float-right">></a>
+  </div>
+  <div>
+    <span>地址管理</span>
+    <a class="float-right">></a>
+  </div>
+  <div>
+    <span>地址管理</span>
+    <a class="float-right">></a>
+  </div>
+  <div>
+    <span>地址管理</span>
+    <a class="float-right">></a>
+  </div>
 </div>
 <!-- 退出按钮 -->
-<div class="logout"></div>
+<div class="logout">
+    <div>
+      <span>退出</span>
+      <a class="float-right" [routerLink]="['/login']">></a>
+    </div>
+</div>
 <!-- footer部分 -->
 <div class="footer fixed-bottom" style="height:49px">
     <a class="col-4 float-left text-center" [routerLink]="['/home']">

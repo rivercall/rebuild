@@ -3,6 +3,10 @@
   height: 3rem;
   text-align: center;
   line-height: 3rem;
+  font-family: PingFangSC-Medium;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 2.15px;
 }
 .login-form{
   width:100%;
@@ -17,7 +21,15 @@
 }
 .login-form .checknum{
   text-align: center;
-  width:75px;
+  width:80px;
+  display: inline-block;
+  height: 25px;
+  line-height: 21px;
+  box-sizing: border-box
+}
+.login-form .checknum:hover{
+  color:#fff;
+  background-color: #999
 }
 .login-form input{
   border: none;
@@ -32,12 +44,12 @@
 }
 .login-form .inputbox{
   padding-bottom: 1rem;
-
 }
 .login-form .checknum{
   display: inline-block;
   border: 1px solid #aaa;
   float: right;
+  cursor: pointer;
 }
 div.agreement{
   width: 100%;
