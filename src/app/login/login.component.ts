@@ -17,8 +17,8 @@ export class LoginComponent implements OnInit {
   private timer; //定时器
   private isSending=false; //是否正在发送验证码
 
-  phoneNumber:number ; //手机号
-  vertification:number; //验证码
+  phoneNumber:string ; //手机号
+  vertification:string; //验证码
 
   // 请求头设置
   private headers:Headers;
@@ -44,8 +44,8 @@ export class LoginComponent implements OnInit {
       return;
     }
     this.isSending = true;
-    this.phoneNumber=18621856558;
-    this.vertification = 123456;
+    this.phoneNumber='18621856558';
+    this.vertification = '123456';
     this.timer = setInterval(() => {
       if(this.second<=0){
         this.getVertification ="获取验证码";
@@ -61,45 +61,52 @@ export class LoginComponent implements OnInit {
   }
   // 手机号校验
   isPhoneNumber:boolean = true;
+  phoneError:string;
   checkPhoneNumber(phoneNumber){
     var phonereg=/^[1][3,4,5,7,8][0-9]{9}$/;
-    if(!phoneNumber.trim()){
-      this.isPhoneNumber = true;
+    if(phoneNumber==""){
+      this.isPhoneNumber=false;
+      this.phoneError=""
     }else if(!phonereg.test(phoneNumber)){
       this.isPhoneNumber = false;
+      this.phoneError = "请输入正确的手机号"
     }else{
       this.isPhoneNumber = true;
+      this.phoneError=""
     }
   }
   // 验证码校验
   isVertification:boolean = true;
+  vertiError:string;
   checkVertfication(vertification){
     var phonereg=/^\d{6}$/;
-    if(!vertification.trim()){
-      this.isVertification = true;
+    if(vertification ==""){
+      this.isVertification=false;
+      this.vertiError = "";
     }else if(!phonereg.test(vertification)){
       this.isVertification = false;
+      this.vertiError="请输入6位数字"
     }else{
       this.isVertification = true;
+      this.vertiError=""
     }
   }
 
   // 登录
   obj:object = { };
   login(){
-    if(this.phoneNumber==undefined||this.isPhoneNumber == false){
-      alert("手机号错误")
+    if(this.isPhoneNumber == false){
+      alert("手机号填写错误")
       return;
     }
-    if(this.vertification==undefined||this.isVertification == false){
-      alert("验证码错误")
+    if(this.isVertification == false){
+      alert("验证码填写错误")
       return;
     }
     this.obj={
       phoneNumber:this.phoneNumber,
       code:this.vertification
     }
-    // {phoneNumber:18621856558,code:123456}
     this.http.post("http://127.0.0.1:4201/login",this.obj).toPromise().then((response)=>{
       this.loginInfo = response.json()
       if(this.loginInfo.responseCode==0){

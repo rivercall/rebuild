@@ -3,17 +3,17 @@
   <div class="col-12 clearfix inputbox">
       <label class="col-3 float-left">手机号</label>
       <div class="col-9 float-left inputdiv">
-        <input type="text " placeholder="请输入手机号" [(ngModel)]="phoneNumber" name="phoneNumber" (blur)="checkPhoneNumber(phoneNumber)">
+        <input type="text " placeholder="请输入手机号" [(ngModel)]="phoneNumber" name="phoneNumber" (keyup)="checkPhoneNumber(phoneNumber)">
         <span class="checknum" (click)="getVertif()">{{getVertification}}</span>
       </div>
-      <div class="remind red" [hidden]="isPhoneNumber">请输入正确的手机号</div>
+      <div class="remind red">{{phoneError}}</div>
   </div>
   <div class="col-12 clearfix inputbox">
       <label class="col-3 float-left">验证码</label>
       <div class="col-9 float-left inputdiv">
-        <input type="text" placeholder="请输入验证码" [(ngModel)]="vertification" name="vertification" (blur)="checkVertfication(vertification)">
+        <input type="text" placeholder="请输入验证码" [(ngModel)]="vertification" name="vertification" (keyup)="checkVertfication(vertification)">
       </div>
-      <div class="remind red" [hidden]="isVertification">验证码为6位数字</div>
+      <div class="remind red">{{vertiError}}</div>
   </div> 
 </form>
 <div class="agreement">
