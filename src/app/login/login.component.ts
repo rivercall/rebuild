@@ -19,6 +19,10 @@ export class LoginComponent implements OnInit {
 
   phoneNumber:string ; //手机号
   vertification:string; //验证码
+  isPhoneNumber:boolean = true;
+  isVertification:boolean = true;
+  phoneError:string;
+  vertiError:string;
 
   // 请求头设置
   private headers:Headers;
@@ -26,6 +30,7 @@ export class LoginComponent implements OnInit {
 
   // 登陆信息
   private loginInfo:any;
+  
 
   constructor(private route:Router, private http:Http) { 
     this.headers = new Headers({ 
@@ -44,8 +49,14 @@ export class LoginComponent implements OnInit {
       return;
     }
     this.isSending = true;
-    this.phoneNumber='18621856558';
+    this.phoneNumber='17602197317';
     this.vertification = '123456';
+
+    this.isPhoneNumber = true;
+    this.isVertification = true;
+    this.phoneError=""
+    this.vertiError=""
+
     this.timer = setInterval(() => {
       if(this.second<=0){
         this.getVertification ="获取验证码";
@@ -60,8 +71,6 @@ export class LoginComponent implements OnInit {
     }, 1000);
   }
   // 手机号校验
-  isPhoneNumber:boolean = true;
-  phoneError:string;
   checkPhoneNumber(phoneNumber){
     var phonereg=/^[1][3,4,5,7,8][0-9]{9}$/;
     if(phoneNumber==""){
@@ -76,8 +85,6 @@ export class LoginComponent implements OnInit {
     }
   }
   // 验证码校验
-  isVertification:boolean = true;
-  vertiError:string;
   checkVertfication(vertification){
     var phonereg=/^\d{6}$/;
     if(vertification ==""){
@@ -107,7 +114,8 @@ export class LoginComponent implements OnInit {
       phoneNumber:this.phoneNumber,
       code:this.vertification
     }
-    this.http.post("http://127.0.0.1:4201/login",this.obj).toPromise().then((response)=>{
+    // http://127.0.0.1:4201/login
+    this.http.post("http://10.0.11.167:8080/login",this.obj).toPromise().then((response)=>{
       this.loginInfo = response.json()
       if(this.loginInfo.responseCode==0){
         localStorage.setItem("phoneNumber", JSON.stringify(this.phoneNumber));

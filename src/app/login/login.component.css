@@ -35,7 +35,7 @@
   outline: none;
   width: 7rem;
   text-indent: 5px;
-  background-color: #fff !important;
+  box-shadow: 0 0 0 1000px white inset !important;
 }
 .login-form .inputdiv{
   border-bottom: 1px solid #eee;
