@@ -11,7 +11,7 @@
 
 <!-- 洗护范围 -->
 <div class="wash-range clearfix">
-  <p class="col-12">洗护范围</p>
+  <p class="col-12">{{isLoginText}}</p>
   <div class="clearfix wash-range-imgbox">
     <!-- <div class="col-4 float-left">
       <img src="../../assets/house@3x.png" alt="" >
@@ -52,7 +52,7 @@
     <a class="col-4 float-left text-center">
       <img src="../../assets/order_gray.png" alt="">
     </a>
-    <a class="col-4 float-left text-center" [routerLink]="['/account']">
+    <a class="col-4 float-left text-center" (click)="toAccount()">
       <img src="../../assets/account_gray.png" alt="">
     </a>
 </div>
